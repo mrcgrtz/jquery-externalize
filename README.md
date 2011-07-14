@@ -12,7 +12,7 @@ Externalize is chainable and highly customizable (well, as customizable as it ca
  * `relation`, applies a relationship to an external link (string, default: “external”)
  * `title`, sets the text added as or appended to the “title” attribute to inform the user about an upcoming new window (string, default: “Opens in a new window”)
 
-## Example
+## Examples
 
 The most common use case would be:
 
@@ -26,6 +26,21 @@ The most common use case would be:
 As a result we get a link that makes use of HTML5’s “external” relationship attribute and which features a descriptive “title” attribute in English and a plain old “target” attribute to open up a new window:
 
 	<p><a href="http://example.com/" rel="external" title="example.com (Opens in a new window)" target="external">Go to example site</a></p>
+
+Another use case: Opening PDF files in a new window.
+
+	<p><a href="/download/sample.pdf">Download PDF</a>
+	<script src="jquery.min.js"></script>
+	<script src="jquery.externalize.min.js"></script>
+	<script>
+		$('a[href$=".pdf"]').externalize({
+			target: false
+		});
+	</script>
+
+This becomes a link with an onClick event to open a new window:
+
+	<p><a href="/download/sample.pdf" rel="external" title="Opens in a new window">Download PDF</a></p>
 
 ## License
 
