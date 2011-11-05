@@ -3,7 +3,7 @@
  *
  * Opens external links in a new window. Add a short description to the link’s title attribute.
  *
- * @see https://github.com/373681
+ * @see https://github.com/Dreamseer/Externalize
  * @author Marc Görtz (http://marcgoertz.de/)
  * @copyright 2011
  * @license MIT License
