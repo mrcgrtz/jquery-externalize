@@ -1,0 +1,35 @@
+{
+	"name": "externalize",
+	"title": "jQuery Externalize",
+	"description": "Externalize is a jQuery plugin which unobtrusively adds external window creation to a bunch of links. Also, it’s ridiculously small (< 1kB).",
+	"keywords": [
+		"links",
+		"window"
+	],
+	"version": "2.1.2",
+	"author": {
+		"name": "Marc Görtz",
+		"email": "mail@marcgoertz.de",
+		"url": "http://marcgoertz.de/"
+	},
+	"maintainers": [
+		{
+			"name": "Marc Görtz",
+			"email": "mail@marcgoertz.de",
+			"url": "http://marcgoertz.de/"
+		}
+	],
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "https://github.com/Dreamseer/Externalize/blob/1.0.0/MIT-LICENSE.txt"
+		}
+	],
+	"bugs": "https://github.com/Dreamseer/Externalize/issues",
+	"homepage": "https://github.com/Dreamseer/Externalize",
+	"docs": "https://github.com/Dreamseer/Externalize",
+	"download": "https://github.com/Dreamseer/Externalize",
+	"dependencies": {
+		"jquery": ">=1.7"
+	}
+}
