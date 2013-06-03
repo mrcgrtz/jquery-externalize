@@ -11,11 +11,20 @@
  * @param props Configuration object (see defaults in plugin function)
  * @return links
  */
-(function( $ ) {
-	$.fn.externalize = function( options ) {
+(function( factory ) {
+	// check for AMD usage
+	if ( typeof define === "function" && define.amd ) {
+		define( [ "jquery" ], factory );
+	} else {
+		// browser globals
+		factory( jQuery );
+	}
+}(function( $ ) {
 
-		// use strict mode (see https://developer.mozilla.org/en/JavaScript/Strict_mode)
-		"use strict";
+	// use strict mode (see https://developer.mozilla.org/en/JavaScript/Strict_mode)
+	"use strict";
+
+	$.fn.externalize = function( options ) {
 
 		// default configuration
 		var defaults = {
@@ -27,12 +36,12 @@
 		};
 
 		// get the links and apply the desired handling
-		return this.each(function() {
+		return this.each( function() {
 
 			// save item and some useful information about it
 			var $this = $(this),
-			isLink   = (( $this.get( 0 ).nodeName === "A" ) || ( $this.get( 0 ).nodeName === "AREA" )),
-			hasHref  = $this.attr( "href" ),
+			isLink    = (( $this.get( 0 ).nodeName === "A" ) || ( $this.get( 0 ).nodeName === "AREA" )),
+			hasHref   = $this.attr( "href" ),
 
 			// if any options were supplied, apply them to the configuration object
 			config = $.extend( defaults, options );
@@ -64,4 +73,5 @@
 		});
 
 	};
-})( jQuery );
+
+}));

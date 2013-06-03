@@ -1,6 +1,6 @@
 # Externalize
 
-Externalize is a jQuery plugin which unobtrusively adds external window creation to a bunch of links. Also, it’s ridiculously small (< 1kB).
+Externalize is a jQuery plugin which unobtrusively adds external window creation to a bunch of links. Also, it’s ridiculously small (< 1kB) and supports AMD.
 
 ## Options
 
