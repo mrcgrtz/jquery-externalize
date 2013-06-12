@@ -1,6 +1,6 @@
 # Externalize
 
-Externalize is a jQuery plugin which unobtrusively adds external window creation to a bunch of links. Also, it’s ridiculously small (< 1kB) and supports AMD.
+Externalize is a jQuery plugin which unobtrusively adds external window creation to a bunch of links. It’s ridiculously small (< 1kB g’zipped) and supports [AMD](https://github.com/amdjs/amdjs-api/wiki).
 
 ## Options
 
@@ -38,9 +38,17 @@ Another use case: Opening PDF files in a new window.
 		});
 	</script>
 
-This becomes a link with an onClick event to open a new window:
+This becomes a link with an `onClick` event to open a new window:
 
 	<p><a href="/download/sample.pdf" rel="external" title="Opens in a new window">Download PDF</a></p>
+
+## History
+
+In the past I used XHTML 1.0 Strict which prohibited the `target` attribute. Whenever I had a client which wanted to open some links in a new window, I told them this, and I really did not want to switch to ugly Transitional doctypes. But most of the time they insisted on new windows, so I created a solution written in JavaScript which eventually became the one in this repository.
+
+Now everybody uses HTML5 which is fine. You may go and use `target` again.
+
+I for myself use this as a playground for writing and maintaining jQuery plugins. :-)
 
 ## License
 
