@@ -2,7 +2,15 @@
 
 Externalize is a jQuery plugin which unobtrusively adds external window creation to a bunch of links. It’s ridiculously small (< 1kB g’zipped) and supports [AMD](https://github.com/amdjs/amdjs-api/wiki).
 
-## Options
+## Installation
+
+Get the [minified file](jquery.externalize.min.js) or install Externalize via [Bower](http://bower.io/):
+
+``` bash
+bower install jquery-externalize
+```
+
+## Usage
 
 Externalize is chainable and highly customizable (well, as customizable as it can get by now) by using these options:
 
