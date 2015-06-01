@@ -5,7 +5,7 @@
  *
  * @see https://github.com/Dreamseer/jquery-externalize
  * @author Marc Görtz (http://marcgoertz.de/)
- * @copyright 2011-2013
+ * @copyright 2011-2015
  * @license MIT License
  * @example $('a[href*="//"], a[rel="external"]').externalize();
  * @param props Configuration object (see defaults in plugin function)
@@ -60,11 +60,11 @@
 					$this.attr( "target", config.name );
 				} else {
 					$this.on( "click", function( evt ) {
-							// open a new window and set focus
-							var external = window.open( $this.attr( "href" ), config.name );
-							external.focus();
-							// stop the link's default action
-							evt.preventDefault();
+						// open a new window and set focus
+						var external = window.open( $this.attr( "href" ), config.name );
+						external.focus();
+						// stop the link's default action
+						evt.preventDefault();
 					});
 				}
 
