@@ -21,12 +21,7 @@
       "url": "http://marcgoertz.de/"
     }
   ],
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/Dreamseer/jquery-externalize/blob/3.0.0/MIT-LICENSE.txt"
-    }
-  ],
+  "license": "MIT",
   "bugs": "https://github.com/Dreamseer/jquery-externalize/issues",
   "homepage": "https://github.com/Dreamseer/jquery-externalize",
   "repository": "https://github.com/Dreamseer/jquery-externalize",
