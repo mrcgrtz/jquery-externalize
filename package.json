@@ -30,14 +30,16 @@
   },
   "devDependencies": {
     "eslint": "^4.3.0",
-    "eslint-config-jquery": "^1.0.1"
+    "eslint-config-jquery": "^1.0.1",
+    "qunitjs": "^2.4.0"
   },
   "scripts": {
-    "test": "eslint jquery.externalize.js"
+    "test": "eslint **/*.js && qunit"
   },
   "eslintConfig": {
     "extends": "jquery",
     "env": {
+      "jquery": true,
       "browser": true
     }
   }
