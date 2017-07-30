@@ -27,5 +27,18 @@
   "repository": "https://github.com/Dreamseer/jquery-externalize",
   "dependencies": {
     "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.3.0",
+    "eslint-config-jquery": "^1.0.1"
+  },
+  "scripts": {
+    "test": "eslint jquery.externalize.js"
+  },
+  "eslintConfig": {
+    "extends": "jquery",
+    "env": {
+      "browser": true
+    }
   }
 }
