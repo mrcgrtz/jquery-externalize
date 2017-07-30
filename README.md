@@ -8,7 +8,7 @@ In the past I used XHTML 1.0 Strict which prohibited the `target` attribute. Whe
 
 Now everybody uses HTML5 which is fine. You may go and use `target` again.
 
-I for myself use this as a playground for writing and maintaining jQuery plugins. :-)
+I for myself use this as a _playground_ for writing and maintaining jQuery plugins. :-)
 
 ## Install
 
@@ -79,6 +79,11 @@ This becomes a link with an `onClick` event to open a new window:
 ``` html
 <p><a href="/download/sample.pdf" rel="external" title="Opens in a new window">Download PDF</a></p>
 ```
+
+## Roadmap (a.k.a. the next thing I wanna learn)
+
+1. Use [Karma](https://karma-runner.github.io/) and [Chrome Headless](https://developers.google.com/web/updates/2017/06/headless-karma-mocha-chai) for testing.
+2. Add [Travis CI](https://travis-ci.org) support.
 
 ## License
 
