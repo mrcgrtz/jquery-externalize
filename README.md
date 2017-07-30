@@ -24,7 +24,7 @@ Using [yarn](https://yarnpkg.com/):
 $ yarn add jquery-externalize
 ```
 
-Using [Bower](https://bower.io/):
+Using [Bower](https://bower.io/) (deprecated):
 
 ```
 $ bower install jquery-externalize
