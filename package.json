@@ -12,13 +12,13 @@
   "author": {
     "name": "Marc Görtz",
     "email": "mail@marcgoertz.de",
-    "url": "http://marcgoertz.de/"
+    "url": "https://marcgoertz.de/"
   },
   "maintainers": [
     {
       "name": "Marc Görtz",
       "email": "mail@marcgoertz.de",
-      "url": "http://marcgoertz.de/"
+      "url": "https://marcgoertz.de/"
     }
   ],
   "license": "MIT",
@@ -26,6 +26,6 @@
   "homepage": "https://github.com/Dreamseer/jquery-externalize",
   "repository": "https://github.com/Dreamseer/jquery-externalize",
   "dependencies": {
-    "jquery": ">=1.7"
+    "jquery": "^3.2.1"
   }
 }
