@@ -11,15 +11,7 @@
  * @param options Configuration object (see defaults in plugin function)
  * @return links
  */
-(function( factory ) {
-	// check for AMD usage
-	if ( typeof define === "function" && define.amd ) {
-		define( [ "jquery" ], factory );
-	} else {
-		// browser globals
-		factory( jQuery );
-	}
-}(function( $ ) {
+( function( $ ) {
 
 	// use strict mode (see https://developer.mozilla.org/en/JavaScript/Strict_mode)
 	"use strict";
@@ -75,4 +67,4 @@
 
 	};
 
-}));
+} )();
