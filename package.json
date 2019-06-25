@@ -31,6 +31,8 @@
   "devDependencies": {
     "eslint": "^6.0.1",
     "eslint-config-jquery": "^2.0.0",
+    "gulp": "^4.0.2",
+    "gulp-qunit": "^2.0.3",
     "qunit": "^2.9.2"
   },
   "scripts": {
