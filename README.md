@@ -1,4 +1,4 @@
-# Externalize [![Build Status](https://travis-ci.org/Dreamseer/jquery-externalize.svg?branch=master)](https://travis-ci.org/Dreamseer/jquery-externalize)
+# Externalize [![Build Status](https://travis-ci.org/Dreamseer/jquery-externalize.svg?branch=master)](https://travis-ci.org/Dreamseer/jquery-externalize) [![Greenkeeper badge](https://badges.greenkeeper.io/Dreamseer/jquery-externalize.svg)](https://greenkeeper.io/)
 
 Externalize is a jQuery plugin which unobtrusively adds external window creation to a bunch of links. It’s ridiculously small (< 1kB g’zipped).
 
