@@ -26,12 +26,12 @@
   "homepage": "https://github.com/Dreamseer/jquery-externalize",
   "repository": "https://github.com/Dreamseer/jquery-externalize",
   "dependencies": {
-    "jquery": "^3.2.1"
+    "jquery": "^3.4.1"
   },
   "devDependencies": {
-    "eslint": "^4.3.0",
-    "eslint-config-jquery": "^1.0.1",
-    "qunitjs": "^2.4.0"
+    "eslint": "^6.0.1",
+    "eslint-config-jquery": "^2.0.0",
+    "qunit": "^2.9.2"
   },
   "scripts": {
     "test": "eslint **/*.js && qunit"
