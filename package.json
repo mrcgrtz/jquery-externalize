@@ -36,7 +36,8 @@
     "qunit": "^2.9.2"
   },
   "scripts": {
-    "test": "eslint **/*.js && qunit"
+    "lint": "eslint **/*.js",
+    "test": "gulp test"
   },
   "eslintConfig": {
     "extends": "jquery",

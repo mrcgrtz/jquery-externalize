@@ -80,11 +80,6 @@ This becomes a link with an `onClick` event to open a new window:
 <p><a href="/download/sample.pdf" rel="external" title="Opens in a new window">Download PDF</a></p>
 ```
 
-## Roadmap (a.k.a. the next thing I wanna learn)
-
-1. Use [Karma](https://karma-runner.github.io/) and [Chrome Headless](https://developers.google.com/web/updates/2017/06/headless-karma-mocha-chai) for testing.
-2. Add [Travis CI](https://travis-ci.org) support.
-
 ## License
 
 MIT © [Marc Görtz](https://marcgoertz.de/)
