@@ -29,11 +29,12 @@
     "jquery": "^3.5.1"
   },
   "devDependencies": {
-    "eslint": "^6.8.0",
-    "eslint-config-jquery": "^2.0.0",
+    "eslint": "^7.16.0",
+    "eslint-config-jquery": "^3.0.0",
     "gulp": "^4.0.2",
-    "gulp-qunit": "^2.1.1",
-    "qunit": "^2.9.3"
+    "gulp-qunit": "^3.0.0",
+    "qunit": "^2.13.0",
+    "qunit-reporter-junit": "^1.1.1"
   },
   "scripts": {
     "lint": "eslint **/*.js",
