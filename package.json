@@ -26,10 +26,10 @@
   "homepage": "https://github.com/Dreamseer/jquery-externalize",
   "repository": "https://github.com/Dreamseer/jquery-externalize",
   "dependencies": {
-    "jquery": "^3.5.1"
+    "jquery": "^3.6.0"
   },
   "devDependencies": {
-    "eslint": "^7.20.0",
+    "eslint": "^7.21.0",
     "eslint-config-jquery": "^3.0.0",
     "gulp": "^4.0.2",
     "gulp-qunit": "^3.0.0",
