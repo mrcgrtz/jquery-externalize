@@ -1,11 +1,11 @@
 {
   "name": "jquery-externalize",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Externalize is a jQuery plugin which unobtrusively adds external window creation to a bunch of links. It’s ridiculously small (< 1kB g’zipped).",
   "main": [
     "./jquery.externalize.js"
   ],
   "dependencies": {
-    "jquery": "^3.2.1"
+    "jquery": "^3.6.0"
   }
 }

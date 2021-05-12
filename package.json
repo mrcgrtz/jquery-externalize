@@ -29,22 +29,17 @@
     "jquery": "^3.6.0"
   },
   "devDependencies": {
-    "eslint": "^7.21.0",
+    "eslint": "^7.26.0",
     "eslint-config-jquery": "^3.0.0",
     "gulp": "^4.0.2",
     "gulp-qunit": "^3.0.0",
-    "qunit": "^2.14.0",
+    "qunit": "^2.15.0",
     "qunit-reporter-junit": "^1.1.1"
   },
   "scripts": {
-    "lint": "eslint **/*.js",
-    "test": "gulp test"
+    "test": "eslint **/*.js && gulp test"
   },
   "eslintConfig": {
-    "extends": "jquery",
-    "env": {
-      "jquery": true,
-      "browser": true
-    }
+    "extends": "jquery"
   }
 }

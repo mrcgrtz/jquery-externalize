@@ -1,4 +1,4 @@
-/* eslint-env qunit */
+/* eslint-env qunit, jquery, browser */
 
 QUnit.module( "$.externalize()", function() {
 
