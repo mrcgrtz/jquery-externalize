@@ -26,12 +26,6 @@ Using [yarn](https://yarnpkg.com/):
 yarn add jquery-externalize
 ```
 
-Using [Bower](https://bower.io/) (deprecated):
-
-```bash
-bower install jquery-externalize
-```
-
 ## Usage
 
 Externalize is chainable and highly customizable (well, as customizable as it can get by now) by using these options:
