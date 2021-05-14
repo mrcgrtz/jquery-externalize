@@ -25,7 +25,7 @@ test( "Sets defaults as expected", function( t ) {
 
 	// check state after plugin use
 	$( "a[href*='//']" ).externalize();
-	t.is( link.target, "external" );
+	t.is( link.target, "_blank" );
 	t.is( link.rel, "external" );
 	t.is( link.title, "example.com (Opens in a new window)" );
 } );
@@ -39,9 +39,9 @@ test( "Sets custom target window name when using the `name` property", function(
 
 	// check state after plugin use
 	$( "a[href*='//']" ).externalize( {
-		name: "test"
+		name: "_parent"
 	} );
-	t.is( link.target, "test", "Target window name is 'test'." );
+	t.is( link.target, "_parent", "Target window name is '_parent'." );
 } );
 
 test( "Sets event behavior when using the `target` property", function( t ) {
@@ -98,4 +98,39 @@ test( "Sets the default title on elements without title attribute", function( t 
 	$( "a[href*='//']" ).externalize();
 	t.is( link.title, "Opens in a new window",
 		"Title is 'Opens in a new window'." );
+} );
+
+test( "Appends the default relation on elements with a relation attribute", function( t ) {
+	global.document.body.innerHTML = "<a href=\"https://example.com/\" rel=\"help\">Go to example site</a>";
+
+	// check default state
+	var link = global.document.querySelector( "a" );
+	t.is( link.rel, "help", "Relation is 'help'." );
+
+	// check state after plugin use
+	$( "a[href*='//']" ).externalize();
+	t.is( link.rel, "help external",
+		"Relation is 'help external'." );
+} );
+
+test( "Handles only links and areas", function( t ) {
+	var markup = "";
+	markup += "<button class=\"test\">A button</button>";
+	markup += "<a href=\"https://example.com/\" class=\"test\">A link</a>";
+	markup += "<map name=\"foo\"><area class=\"test\" shape=\"rect\" coords=\"34,44,270,350\" alt=\"Foobar\" href=\"https://example.com/\"></map>";
+	global.document.body.innerHTML = markup;
+
+	// check default states
+	var button = global.document.querySelector( "button" );
+	t.is( button.rel, undefined, "Button relation does not exist." );
+	var link = global.document.querySelector( "a" );
+	t.is( link.rel, "", "Link relation is empty." );
+	var area = global.document.querySelector( "area" );
+	t.is( area.rel, "", "Area relation is empty." );
+
+	// check state after plugin use
+	$( ".test" ).externalize();
+	t.is( button.rel, undefined, "Button relation still does not exist." );
+	t.is( link.rel, "external", "Link relation is 'external'." );
+	t.is( area.rel, "external", "Area relation is 'external'." );
 } );

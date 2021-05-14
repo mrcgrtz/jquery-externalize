@@ -15,7 +15,7 @@ $.fn.externalize = function( options ) {
 
 	// default configuration
 	var defaults = {
-		name: "external", // (string) name of the external window
+		name: "_blank", // (string) name of the external window
 		target: true, // (bool) use the "target" HTML attribute to support Firefox tab handling and Safari status bar info
 		classes: "", // (string) apply CSS classes to an external link
 		relation: "external", // (string) apply a relationship to an external link
