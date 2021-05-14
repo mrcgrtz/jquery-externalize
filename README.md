@@ -2,7 +2,10 @@
 
 > Externalize is a jQuery plugin which unobtrusively adds external window creation to a bunch of links. It’s ridiculously small (< 1kB g’zipped).
 
-[![Build Status](https://travis-ci.org/Dreamseer/jquery-externalize.svg?branch=master)](https://travis-ci.org/Dreamseer/jquery-externalize)
+![Update Status](https://img.shields.io/david/dreamseer/jquery-externalize)
+![Update Status](https://img.shields.io/david/dev/dreamseer/jquery-externalize.svg)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/dreamseer/jquery-externalize/Test%20and%20create%20coverage%20report/main)
+[![MIT license](https://img.shields.io/github/license/dreamseer/jquery-externalize.svg)](https://github.com/Dreamseer/jquery-externalize/blob/main/LICENSE.md)
 
 ## Why?
 
