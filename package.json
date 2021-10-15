@@ -11,16 +11,9 @@
   "version": "4.0.2",
   "author": {
     "name": "Marc Görtz",
-    "email": "mail@marcgoertz.de",
+    "email": "git@marcgoertz.de",
     "url": "https://marcgoertz.de/"
   },
-  "maintainers": [
-    {
-      "name": "Marc Görtz",
-      "email": "mail@marcgoertz.de",
-      "url": "https://marcgoertz.de/"
-    }
-  ],
   "license": "MIT",
   "bugs": "https://github.com/Dreamseer/jquery-externalize/issues",
   "homepage": "https://github.com/Dreamseer/jquery-externalize",
