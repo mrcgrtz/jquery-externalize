@@ -15,9 +15,9 @@
     "url": "https://marcgoertz.de/"
   },
   "license": "MIT",
-  "bugs": "https://github.com/Dreamseer/jquery-externalize/issues",
-  "homepage": "https://github.com/Dreamseer/jquery-externalize",
-  "repository": "https://github.com/Dreamseer/jquery-externalize",
+  "bugs": "https://github.com/mrcgrtz/jquery-externalize/issues",
+  "homepage": "https://github.com/mrcgrtz/jquery-externalize",
+  "repository": "https://github.com/mrcgrtz/jquery-externalize",
   "dependencies": {
     "jquery": "^3.6.0"
   },

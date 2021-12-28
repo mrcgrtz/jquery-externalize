@@ -3,7 +3,7 @@
  *
  * Opens external links in a new window. Add a short description to the link’s title attribute.
  *
- * @see https://github.com/Dreamseer/jquery-externalize
+ * @see https://github.com/mrcgrtz/jquery-externalize
  * @author Marc Görtz (https://marcgoertz.de/)
  * @copyright 2011-2017
  * @license MIT License
