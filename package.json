@@ -18,6 +18,11 @@
   "bugs": "https://github.com/mrcgrtz/jquery-externalize/issues",
   "homepage": "https://github.com/mrcgrtz/jquery-externalize",
   "repository": "https://github.com/mrcgrtz/jquery-externalize",
+  "scripts": {
+    "lint": "eslint --format=pretty \"**/*.?({c,m}){j,t}s?(x)\"",
+    "test": "c8 ava",
+    "coverage": "c8 report --reporter=lcov"
+  },
   "dependencies": {
     "jquery": "^3.6.0"
   },
@@ -26,17 +31,7 @@
     "c8": "^7.7.2",
     "eslint": "^8.0.0",
     "eslint-config-jquery": "^3.0.0",
+    "eslint-formatter-pretty": "^5.0.0",
     "jsdom": "^21.0.0"
-  },
-  "scripts": {
-    "test": "eslint *.js && c8 ava",
-    "coverage": "c8 report --reporter=lcov"
-  },
-  "eslintConfig": {
-    "env": {
-      "browser": true,
-      "jquery": true
-    },
-    "extends": "jquery"
   }
 }

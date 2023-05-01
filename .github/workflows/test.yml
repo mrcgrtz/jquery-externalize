@@ -8,7 +8,6 @@ on:
 
 jobs:
   test:
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -18,17 +17,24 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v3
+
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-    - name: Installation
+
+    - name: Install dependencies
       run: npm ci
-    - name: Test
+
+    - name: Analyze JavaScript files
+      run: npm run-script lint
+
+    - name: Run test suite
       run: |
         npm test
         npm run-script coverage
-    - name: Coveralls
+
+    - name: Push coverage report
       uses: coverallsapp/github-action@master
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
