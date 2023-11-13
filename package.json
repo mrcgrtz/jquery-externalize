@@ -8,7 +8,7 @@
     "jquery-plugin",
     "ecosystem:jquery"
   ],
-  "version": "4.0.2",
+  "version": "5.0.0",
   "author": {
     "name": "Marc Görtz",
     "email": "git@marcgoertz.de",
