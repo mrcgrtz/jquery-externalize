@@ -23,15 +23,16 @@
     "test": "c8 ava",
     "coverage": "c8 report --reporter=lcov"
   },
-  "dependencies": {
-    "jquery": "^3.6.4"
-  },
   "devDependencies": {
     "ava": "^5.2.0",
     "c8": "^8.0.0",
     "eslint": "^8.39.0",
     "eslint-config-jquery": "^3.0.0",
     "eslint-formatter-pretty": "^5.0.0",
+    "jquery": "^3.7.1",
     "jsdom": "^22.1.0"
+  },
+  "peerDependencies": {
+    "jquery": "^1.7.0 || ^2 || ^3"
   }
 }
