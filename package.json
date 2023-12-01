@@ -30,7 +30,7 @@
     "eslint-config-jquery": "^3.0.0",
     "eslint-formatter-pretty": "^5.0.0",
     "jquery": "^3.7.1",
-    "jsdom": "^22.1.0"
+    "jsdom": "^23.0.1"
   },
   "peerDependencies": {
     "jquery": "^1.7.0 || ^2 || ^3"
