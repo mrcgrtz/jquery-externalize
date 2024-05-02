@@ -26,9 +26,10 @@
   "devDependencies": {
     "ava": "^6.0.1",
     "c8": "^9.1.0",
-    "eslint": "^8.53.0",
+    "eslint": "^9.1.1",
     "eslint-config-jquery": "^3.0.0",
     "eslint-formatter-pretty": "^5.0.0",
+    "globals": "^15.1.0",
     "jquery": "^3.7.1",
     "jsdom": "^24.0.0"
   },
