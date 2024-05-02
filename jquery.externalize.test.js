@@ -1,4 +1,4 @@
-/* eslint-env node */
+/* global require, global -- Globals defined by Node */
 var test = require( "ava" );
 var JSDOM = require( "jsdom" ).JSDOM;
 
