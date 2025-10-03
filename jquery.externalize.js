@@ -5,7 +5,7 @@
  *
  * @see https://github.com/mrcgrtz/jquery-externalize
  * @author Marc Görtz (https://marcgoertz.de/)
- * @copyright 2011-2017
+ * @copyright 2011-2025
  * @license MIT License
  * @example $('a[href*="//"], a[rel="external"]').externalize();
  * @param options Configuration object (see defaults in plugin function)
@@ -27,11 +27,12 @@ $.fn.externalize = function( options ) {
 
 		// save item and some useful information about it
 		var $this = $( this ),
-		isLink = $this.get( 0 ).nodeName === "A" || $this.get( 0 ).nodeName === "AREA",
+		nodeName = this.nodeName,
+		isLink = nodeName === "A" || nodeName === "AREA",
 		hasHref = $this.attr( "href" ),
 
 		// if any options were supplied, apply them to the configuration object
-		config = $.extend( defaults, options );
+		config = $.extend( {}, defaults, options );
 
 		// is this really a link with an "href" attribute?
 		if ( isLink && hasHref ) {
