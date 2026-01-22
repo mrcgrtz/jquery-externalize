@@ -63,7 +63,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        jquery-version: ['3.7.1', '4.0.0-rc.1']
+        jquery-version: ['3.7.1', '4.0.0']
 
     steps:
     - name: Checkout
