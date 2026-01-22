@@ -45,7 +45,7 @@ The most common use case would be:
 ```html
 <p><a href="https://example.com/" title="example.com">Go to example site</a>
 
-<script src="http://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+<script src="https://code.jquery.com/jquery-4.0.0.slim.min.js"></script>
 <script src="jquery.externalize.js"></script>
 <script>
 $('a[href*="//"]').externalize();
@@ -63,7 +63,7 @@ Another use case: Opening PDF files in a new window.
 ```html
 <p><a href="/download/sample.pdf">Download PDF</a>
 
-<script src="http://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+<script src="https://code.jquery.com/jquery-4.0.0.slim.min.js"></script>
 <script src="jquery.externalize.js"></script>
 <script>
 $('a[href$=".pdf"]').externalize({
