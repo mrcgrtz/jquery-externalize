@@ -27,14 +27,15 @@
     "coverage": "c8 report --reporter=lcov"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "ava": "^6.0.1",
     "c8": "^10.1.2",
-    "eslint": "^9.1.1",
+    "eslint": "^10.0.2",
     "eslint-config-jquery": "^3.0.0",
     "eslint-formatter-pretty": "^7.0.0",
     "globals": "^17.3.0",
     "jquery": "^4.0.0",
-    "jsdom": "^27.0.0"
+    "jsdom": "^28.1.0"
   },
   "peerDependencies": {
     "jquery": "^1.7.0 || ^2 || ^3 || ^4"
