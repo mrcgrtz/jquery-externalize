@@ -29,7 +29,7 @@
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "ava": "^6.0.1",
-    "c8": "^10.1.2",
+    "c8": "^11.0.0",
     "eslint": "^10.0.2",
     "eslint-config-jquery": "^3.0.0",
     "eslint-formatter-pretty": "^7.0.0",
