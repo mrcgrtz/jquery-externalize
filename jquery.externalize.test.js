@@ -1,5 +1,5 @@
 /* global require, global -- Globals defined by Node */
-var test = require( "ava" );
+var { default: test } = require( "ava" );
 var JSDOM = require( "jsdom" ).JSDOM;
 
 var fixture = "<a href=\"https://example.com/\" title=\"example.com\">Go to example site</a>";
